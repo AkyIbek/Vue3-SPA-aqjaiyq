@@ -147,6 +147,7 @@ onMounted(() => {
   display: block;
   background-image: url(/src/assets/images/galaxy stars.svg);
 }
+
 .glow {
   filter: drop-shadow(0 0 6px var(--animatedcircle-color));
 }

@@ -96,6 +96,9 @@
   font-size: 1.125rem;
   gap: 0.75em;
 }
+span {
+  color: var(--text-color);
+}
 @media (max-width: 1660px) {
   .intro__region--content {
     width: 912px;

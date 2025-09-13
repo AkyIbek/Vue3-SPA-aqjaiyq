@@ -13,6 +13,7 @@
   --lighten1-color: #004d66;
   --lighten2-color: #00688a;
   --btn-color:;
+  --navlist-color: white;
   --description-color: #00688a;
   --labelname-color: #7daebf;
   --textholder-color: #00688a;
@@ -44,7 +45,7 @@
 :root[data-theme='light'] {
   --bg-color: #ffffff; /* основная синяя */
   --text-color: black;
-  --descripotion-color: #bbd4dd;
+  --descripotion-color: black;
   --labelname-color: #7daebf;
   --label-color: #558ea0;
   --textholder-color: #;
@@ -52,6 +53,7 @@
   --greentext-color: green;
   --header-color: #1a936f;
   --darken-color: #f3f3f3;
+  --navlist-color: white;
   --midnight-color: #ffffff;
   --lighten1-color: #f3f3f3;
   --lighten2-color: #00688a;
@@ -97,6 +99,7 @@
   --lighten1-color: #444444;
   --lighten2-color: #dddddd;
   --btn-color:;
+  --navlist-color: white;
   --description-color: #00688a;
   --label-color: #00688a;
   --textholder-color: #00688a;

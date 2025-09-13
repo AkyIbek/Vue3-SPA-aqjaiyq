@@ -345,4 +345,7 @@ watch(currentDay, updateIndicatorPosition)
 .select__option {
   color: var(--greentext-color);
 }
+.day-info h3 {
+  color: var(--animatedtext-color);
+}
 </style>

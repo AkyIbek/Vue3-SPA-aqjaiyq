@@ -1,74 +1,69 @@
 <script setup>
 import { ref, onMounted, nextTick } from 'vue'
-
-const activeTheme = ref(localStorage.getItem('theme') || '')
-const indicatorOffset = ref(0)
-const languageindicatorOffset = ref(0)
-
-const btn_l1 = ref(null)
-const btn_l2 = ref(null)
-const btn_l3 = ref(null)
-
-const languageMap = {
-  kz: btn_l1,
-  rus: btn_l2,
-  eng: btn_l3,
-}
-
-const setLanguage = async (lang) => {
-  document.documentElement.setAttribute('lang', lang)
-  localStorage.setItem('language', lang)
-  await nextTick()
-  updateLanguageIndicator(lang)
-}
-
-const updateLanguageIndicator = (lang) => {
-  const btnRef = languageMap[lang]
-  if (btnRef.value) {
-    const parent = btnRef.value.parentElement
-    languageindicatorOffset.value = btnRef.value.offsetLeft - parent.offsetLeft
-  }
-}
-
-const btn1 = ref(null)
-const btn2 = ref(null)
-const btn3 = ref(null)
-
-const themeMap = {
-  '': btn1,
-  light: btn2,
-  dark: btn3,
-}
-
-const setTheme = async (theme) => {
-  document.documentElement.setAttribute('data-theme', theme)
-  localStorage.setItem('theme', theme)
-  activeTheme.value = theme
-  await nextTick()
-  updateIndicator()
-}
-
-const updateIndicator = () => {
-  const btnRef = themeMap[activeTheme.value]
-  if (btnRef.value) {
-    const parent = btnRef.value.parentElement
-    indicatorOffset.value = btnRef.value.offsetLeft - parent.offsetLeft
-  }
-}
-
-onMounted(() => {
-  document.documentElement.setAttribute('data-theme', activeTheme.value)
-  updateIndicator()
-
-  const savedLang = localStorage.getItem('language') || 'kz'
-  updateLanguageIndicator(savedLang)
-})
 import { useI18n } from 'vue-i18n'
 
-const { t, locale } = useI18n()
+// i18n
+const { locale } = useI18n()
 
+// тема
+const activeTheme = ref(localStorage.getItem('theme') || '')
+const indicatorOffset = ref(0)
+
+// язык
+const languageIndicatorOffset = ref(0)
+const activeLanguage = ref(localStorage.getItem('language') || 'kz')
+
+// контейнеры
+const languageContainer = ref(null)
+const themeContainer = ref(null)
+
+onMounted(() => {
+  nextTick(() => {
+    updateLanguageIndicator()
+    updateThemeIndicator()
+    // восстановим язык
+    locale.value = activeLanguage.value
+    // восстановим тему
+    applyTheme(activeTheme.value)
+  })
+})
+
+// === ЯЗЫК ===
 function changeLang(lang) {
+  activeLanguage.value = lang
+  localStorage.setItem('language', lang)
   locale.value = lang
+  updateLanguageIndicator()
+}
+
+function updateLanguageIndicator() {
+  if (!languageContainer.value) return
+  const activeBtn = languageContainer.value.querySelector(`[data-lang="${activeLanguage.value}"]`)
+  if (activeBtn) {
+    languageIndicatorOffset.value = activeBtn.offsetLeft
+  }
+}
+
+// === ТЕМА ===
+function setTheme(theme) {
+  activeTheme.value = theme
+  localStorage.setItem('theme', theme)
+  applyTheme(theme)
+  updateThemeIndicator()
+}
+
+function applyTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme || 'default')
+}
+
+function updateThemeIndicator() {
+  if (!themeContainer.value) return
+  const activeBtn = themeContainer.value.querySelector(
+    `[data-theme="${activeTheme.value || 'default'}"]`,
+  )
+  if (activeBtn) {
+    indicatorOffset.value = activeBtn.offsetLeft
+  }
 }
 </script>
 
@@ -78,23 +73,35 @@ function changeLang(lang) {
       <div class="header__top">
         <div class="header__top__content">
           <div class="header__top--item">
-            <div class="header__languages">
+            <!-- языки -->
+            <div class="header__languages" ref="languageContainer">
               <div
                 class="languages__indicator"
-                :style="{ transform: `translateX(${languageindicatorOffset}px)` }"
+                :style="{ transform: `translateX(${languageIndicatorOffset}px)` }"
               ></div>
-              <button ref="btn_l1" @click="changeLang('kz')" class="kz">Каз</button>
-              <button ref="btn_l2" @click="changeLang('ru')" class="rus">Рус</button>
-              <button ref="btn_l3" @click="changeLang('en')" class="eng">Eng</button>
+
+              <button data-lang="kaz" @click="changeLang('kaz')" class="kaz">Каз</button>
+              <button data-lang="ru" @click="changeLang('ru')" class="rus">Рус</button>
+              <button data-lang="en" @click="changeLang('en')" class="eng">Eng</button>
             </div>
-            <div class="header__themes">
+
+            <!-- темы -->
+            <div class="header__themes" ref="themeContainer">
               <div
                 class="theme-indicator"
                 :style="{ transform: `translateX(${indicatorOffset}px)` }"
               ></div>
-              <button ref="btn1" @click="setTheme('')" class="theme-circle blue"></button>
-              <button ref="btn2" @click="setTheme('light')" class="theme-circle light"></button>
-              <button ref="btn3" @click="setTheme('dark')" class="theme-circle dark"></button>
+              <button data-theme="default" @click="setTheme('')" class="theme-circle blue"></button>
+              <button
+                data-theme="light"
+                @click="setTheme('light')"
+                class="theme-circle light"
+              ></button>
+              <button
+                data-theme="dark"
+                @click="setTheme('dark')"
+                class="theme-circle dark"
+              ></button>
             </div>
           </div>
           <div class="header__accessibility">
@@ -103,6 +110,7 @@ function changeLang(lang) {
           </div>
         </div>
       </div>
+
       <div class="header__middle">
         <div class="header__middle__content">
           <div class="header__logo">
@@ -114,7 +122,7 @@ function changeLang(lang) {
             </h4>
           </div>
           <div class="header__contact">
-            <p class="header__text">{{ $t('header.middle.text ') }}</p>
+            <p class="header__text">{{ $t('header.middle.text') }}</p>
             <p class="header__text">+7 (727) 258 8180</p>
           </div>
         </div>
@@ -153,15 +161,12 @@ function changeLang(lang) {
 </template>
 
 <style scoped>
-/* ...все твои стили без изменений... */
-
 .languages__indicator {
-  position: absolute;
+  position: relative;
   width: 2.5rem;
   height: 1.5rem;
   border-radius: 6px;
-  top: 0;
-  left: 305px;
+  top: 0px;
   transition: transform 0.3s ease;
   pointer-events: none;
   z-index: 0;
@@ -172,8 +177,8 @@ function changeLang(lang) {
   width: 2.5rem;
   height: 1.5rem;
   border-radius: 6px;
+  right: 339px;
   top: 0;
-  left: 305px;
   transition: transform 0.3s ease;
   pointer-events: none;
   z-index: 0;
@@ -239,7 +244,6 @@ function changeLang(lang) {
   height: 1.5rem;
   border-radius: 6px;
   top: 0;
-  left: -12px;
   transition: transform 0.3s ease;
   pointer-events: none;
   z-index: 0;
@@ -341,6 +345,7 @@ function changeLang(lang) {
 }
 .nav-item {
   cursor: pointer;
+  color: var(--navlist-color);
 }
 .header__logo {
   cursor: pointer;
@@ -389,7 +394,7 @@ function changeLang(lang) {
 }
 .languages__indicator {
   position: relative;
-  left: -10px;
+  right: 145px;
   width: 2.5rem;
   height: 1.5rem;
   border-radius: 6px;
