@@ -3,7 +3,20 @@
     <div class="card">
       <p class="text">{{ slides[currentIndex] }}</p>
       <div class="dots">
-        <button @click="prev" class="arrow">&#60;</button>
+        <button @click="prev" class="arrow">
+          <svg
+            width="8"
+            height="12"
+            viewBox="0 0 8 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.29499 12L7.70499 10.59L3.12499 6L7.70499 1.41L6.29499 -1.23266e-07L0.294987 6L6.29499 12Z"
+              fill="#5C8693"
+            />
+          </svg>
+        </button>
         <div class="dot-group">
           <span
             v-for="(_, i) in slides"
@@ -11,7 +24,20 @@
             :class="['dot', { active: i === currentIndex }]"
           ></span>
         </div>
-        <button @click="next" class="arrow">&#62;</button>
+        <button @click="next" class="arrow">
+          <svg
+            width="8"
+            height="12"
+            viewBox="0 0 8 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.70501 0L0.295013 1.41L4.87501 6L0.295013 10.59L1.70501 12L7.70501 6L1.70501 0Z"
+              fill="#5C8693"
+            />
+          </svg>
+        </button>
       </div>
     </div>
   </div>

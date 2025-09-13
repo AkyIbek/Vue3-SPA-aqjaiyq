@@ -22,7 +22,14 @@
 
   <!-- Слайдер по дням -->
   <div class="day-slider">
-    <button class="arrow-btn" @click="prevDay">&#60;</button>
+    <button class="arrow-btn" @click="prevDay">
+      <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M6.29502 12L7.70502 10.59L3.12502 6L7.70502 1.41L6.29502 -1.23266e-07L0.295018 6L6.29502 12Z"
+          fill="#5C8693"
+        />
+      </svg>
+    </button>
     <div class="day-list" ref="dayListRef">
       <!-- Плавающий активный кружок -->
       <div class="active-indicator" :style="activeIndicatorStyle"></div>
@@ -38,7 +45,14 @@
         </div>
       </div>
     </div>
-    <button class="arrow-btn" @click="nextDay">&#62;</button>
+    <button class="arrow-btn" @click="nextDay">
+      <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M1.70504 0L0.295044 1.41L4.87504 6L0.295044 10.59L1.70504 12L7.70504 6L1.70504 0Z"
+          fill="#5C8693"
+        />
+      </svg>
+    </button>
   </div>
 
   <div class="day-info">

@@ -2,7 +2,17 @@
   <div class="custom-select">
     <div class="select-header" @click="isOpen = !isOpen">
       <span>{{ modelValue || placeholder }}</span>
-      <span class="arrow" :class="{ open: isOpen }">▼</span>
+      <span class="arrow" :class="{ open: isOpen }"
+        ><svg
+          width="10"
+          height="6"
+          viewBox="0 0 10 6"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 0.5L5 5.5L10 0.5H0Z" fill="#00688A" />
+        </svg>
+      </span>
     </div>
 
     <div v-if="isOpen" class="select-options">
