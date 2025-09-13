@@ -1,0 +1,248 @@
+{
+  "header": {
+    "top": {},
+    "middle": {
+      "title": "Public services and geoinformation of the West Kazakhstan region",
+      "text": "Contact Center",
+      "numbers": "+7 (727) 258 8180"
+    },
+    "nav": {
+      "item-list": {
+        "item-1": "Services",
+        "item-2": "Tools",
+        "item-3": "Maps",
+        "item-4": "For Citizens",
+        "item-5": "For Business",
+        "item-6": "For Investors",
+        "item-7": "Contacts"
+      }
+    },
+    "accessibility": {
+      "text": "Version for visually impaired"
+    }
+  },
+  "footer": {
+    "item-list": {
+      "item-1": "About the portal",
+      "item-2": "Terms of use",
+      "item-3": "Developer contacts",
+      "item-4": "info@smartgeohub.kz",
+      "item-5": "E-Akimat of West Kazakhstan region of the Republic of Kazakhstan © 2019"
+    }
+  },
+  "slider": {
+    "item-list": {
+      "item-1": "Single point of submission, processing and obtaining results of public services",
+      "item-2": "Centralized platform for providing, coordinating and monitoring service delivery",
+      "item-3": "Integrated center for receiving, processing and issuing service results",
+      "item-4": "Comprehensive system of submission, review and receipt of public service results"
+    }
+  },
+  "region": {
+    "item-list": {
+      "item-1": "Region in numbers",
+      "item-2": "cities",
+      "item-3": "districts",
+      "item-4": "rural districts",
+      "item-5": "settlements",
+      "item-6": "services",
+      "item-7": "provided services",
+      "item-8": "thematic data layers"
+    }
+  },
+  "steps": {
+    "item-list": {
+      "item-1": "6 simple steps",
+      "item-2": "to receive the service online",
+      "item-3": "Registration",
+      "item-4": "Description of step two",
+      "item-5": "Description of step three",
+      "item-6": "Description of step four",
+      "item-7": "Description of step five",
+      "item-8": "Description of step six"
+    },
+    "steps-list": {
+      "item-1": "Step 1",
+      "item-2": "Step 2",
+      "item-3": "Step 3",
+      "item-4": "Step 4",
+      "item-5": "Step 5",
+      "item-6": "Step 6"
+    }
+  },
+  "steps-slider": {
+    "item-list": {
+      "item-1": "Service delivery period",
+      "item-2": "9 working days",
+      "item-3": "Change of land use purpose",
+      "item-4": "Option B",
+      "item-5": "Option C",
+      "item-6": "Day - Department of Architecture",
+      "item-7": "Filling out protocols"
+    }
+  },
+  "indicator": {
+    "item-list": {
+      "item-1": "Summary of current indicators",
+      "item-2": "March 28",
+      "item-3": "March 29",
+      "item-4": "March 30",
+      "item-5": "March 31",
+      "item-6": "April 1",
+      "item-7": "April 2",
+      "item-8": "April 3",
+      "item-9": "April 4"
+    }
+  },
+  "timeline": {
+    "item-list": {
+      "item-1": "Step",
+      "item-2": "Step description"
+    }
+  },
+  "solutions": {
+    "item-list": {
+      "item-1": "Services",
+      "item-2": "Open on the portal"
+    },
+    "accordion": {
+      "item-list": {
+        "item-1": {
+          "title": "Approval of land management projects for land plot formation",
+          "content": "Service description 1"
+        },
+        "item-2": {
+          "title": "Approval of land management projects for land plot formation",
+          "content": "Service description 2"
+        },
+        "item-3": {
+          "title": "Issuance of a decision to change the designated purpose of a land plot",
+          "content": "Service description 3"
+        },
+        "item-4": {
+          "title": "Determination of cadastral (appraised) value of a land plot",
+          "content": "Service description 4"
+        },
+        "item-5": {
+          "title": "Determination of cadastral (appraised) value of a land plot",
+          "content": "Service description 5"
+        },
+        "item-6": {
+          "title": "Issuance of a decision to change the designated purpose of a land plot",
+          "content": "Service description 6"
+        },
+        "item-7": {
+          "title": "Approval of land management projects for land plot formation",
+          "content": "Service description 7"
+        }
+      }
+    },
+    "filter": {
+      "item-list": {
+        "item-1": "All regions",
+        "item-2": "Almaty",
+        "item-3": "Astana",
+        "item-4": "Aktobe",
+        "item-5": "Uralsk",
+        "item-6": "All types",
+        "item-7": "Issuance",
+        "item-8": "Approval",
+        "item-9": "Determination",
+        "item-10": "Registration"
+      }
+    }
+  },
+  "services": {
+    "card": {
+      "item-list": {
+        "item-1": "Service for checking individuals and legal entities registered in Shymkent",
+        "item-2": "Service for checking individuals and legal entities registered in Turkestan region",
+        "item-3": "Service for checking transport movement access during quarantine in Almaty",
+        "item-4": "Service for viewing polling station centers on the electronic map of Astana",
+        "item-5": "Service description",
+        "item-6": "More details",
+        "item-7": "Services"
+      }
+    },
+    "filter": {
+      "item-list": {
+        "item-1": "All regions",
+        "item-2": "Almaty",
+        "item-3": "Astana",
+        "item-4": "Shymkent",
+        "item-5": "Turkestan",
+        "item-6": "Show all",
+        "item-7": "Online",
+        "item-8": "Offline"
+      }
+    }
+  },
+  "maps": {
+    "filter": {
+      "item-list": {
+        "item-1": "Show all",
+        "item-2": "Subsoil use",
+        "item-3": "Maps",
+        "item-4": "All regions",
+        "item-5": "Almaty",
+        "item-6": "Astana",
+        "item-7": "Aktobe",
+        "item-8": "Uralsk"
+      }
+    },
+    "card": {
+      "item-list": {
+        "item-1": "For subsoil users",
+        "item-2": "3D map",
+        "item-3": "Satellite images",
+        "item-4": "For cartographers",
+        "item-5": "Ex cillum eiusmod voluptate Lorem dolor laboris voluptate. Tempor proident dolor in ex pariatur sit et ea amet veniam.",
+        "item-6": "More details"
+      }
+    }
+  },
+  "citizens": {
+    "item-1": "For Citizens",
+    "item-2": "Services",
+    "item-3": "E-Services",
+    "item-4": "Public Services",
+    "item-5": "For Business",
+    "item-6": "For Investors",
+    "filter": {
+      "item-list": {
+        "item-1": "Show all",
+        "item-2": "Services",
+        "item-3": "Tools",
+        "item-4": "Maps",
+        "item-5": "All regions",
+        "item-6": "Almaty",
+        "item-7": "Astana",
+        "item-8": "Shymkent",
+        "item-9": "Turkestan"
+      }
+    },
+    "card": {
+      "item-list": {
+        "item-1": "Approval of land management projects for land plot formation",
+        "item-2": "Issuance of a decision to change the designated purpose of a land plot",
+        "item-3": "Determination of cadastral (appraised) value of a land plot",
+        "item-4": "Issuance of a decision to change the designated purpose of a land plot"
+      }
+    }
+  },
+  "contact": {
+    "item-list": {
+      "item-1": "Contacts",
+      "item-2": "UGZ Department"
+    },
+    "form": {
+      "item-list": {
+        "item-1": "Write to us",
+        "item-2": "Name",
+        "item-3": "Email",
+        "item-4": "Enter your message",
+        "item-5": "SEND"
+      }
+    }
+  }
+}

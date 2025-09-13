@@ -1,0 +1,126 @@
+/* src/assets/themes.css */
+:root {
+  --bg-color: #00455c; /* основная синяя */
+  --text-color: #ffffff;
+  --descripotion-color: #bbd4dd;
+  --label-color: #558ea0;
+  --textholder-color: #;
+  --subtext-color: #7daebf;
+  --greentext-color: #d0dce0;
+  --header-color: #00455c;
+  --darken-color: #003e52;
+  --midnight-color: #00455c;
+  --lighten1-color: #004d66;
+  --lighten2-color: #00688a;
+  --btn-color:;
+  --description-color: #00688a;
+  --labelname-color: #7daebf;
+  --textholder-color: #00688a;
+  --dropshadow-top: #006180;
+  --dropshadow-bottom: #001f29;
+  --dropshadow2-top: #006c8f;
+  --dropshadow2-bottom: #001f29;
+  --innershadow-top: #005570;
+  --innershadow-bottom: #00131a;
+  --footer-color: #003647;
+  --dropshadow3-top: #005570;
+  --dropshadow3-bottom: #002e3d;
+  --filters-color: #003e52;
+  --contact-color: #197694;
+  --animatedcircle-color: #ffffff;
+  --static-circle-color: #a8bec6;
+  --animatedtext-color: #5c8693;
+  --animatedtext-active-color: #ffffff;
+  --indicator-gradient-solid: rgba(46, 96, 112, 1); /* 100% */
+  --indicator-gradient-transparent: rgba(46, 96, 112, 0); /* 0% */
+  --focused-border-color: #003e52;
+  --region-text-color: #d0dce0;
+  --indicator-line-color: #00688a;
+  --steps-shadow-color: #003e52;
+  --contact-right-shadow-color: #005570;
+  --contact-left-shadow-color: #00455c;
+}
+
+:root[data-theme='light'] {
+  --bg-color: #ffffff; /* основная синяя */
+  --text-color: black;
+  --descripotion-color: #bbd4dd;
+  --labelname-color: #7daebf;
+  --label-color: #558ea0;
+  --textholder-color: #;
+  --subtext-color:;
+  --greentext-color: green;
+  --header-color: #1a936f;
+  --darken-color: #f3f3f3;
+  --midnight-color: #ffffff;
+  --lighten1-color: #f3f3f3;
+  --lighten2-color: #00688a;
+  --btn-color:;
+  --description-color: #00688a;
+  --label-color: #00688a;
+  --textholder-color: #00688a;
+  --dropshadow-top: #ffffff;
+  --dropshadow-bottom: #dcdcdc;
+  --dropshadow2-top: #f0f0f0;
+  --dropshadow2-bottom: #cccccc;
+  --innershadow-top: #f2f2f2;
+  --innershadow-bottom: #c0c0c0;
+  --footer-color: #eaeaea;
+  --dropshadow3-top: #eeeeee;
+  --dropshadow3-bottom: #bbbbbb;
+  --filters-color: #003e52;
+  --contact-color: #197694;
+  --animatedcircle-color: #1a936f;
+  --static-circle-color: #e0e0e0;
+  --animatedtext-color: #888888;
+  --animatedtext-active-color: #1a936f;
+  --focused-border-color: #aeaeb2;
+  --region-text-color: #888888;
+  --indicator-gradient-solid: #e0e0e0; /* 100% */
+  --indicator-gradient-transparent: #e0e0e0; /* 0% */
+  --indicator-line-color: #d5ebe4;
+  --steps-shadow-color: #f3f3f3;
+}
+
+:root[data-theme='dark'] {
+  --bg-color: #2c2c2c; /* основная синяя */
+  --text-color: #ffffff;
+  --descripotion-color: #bbd4dd;
+  --labelname-color: #7daebf;
+  --label-color: #558ea0;
+  --textholder-color: #;
+  --subtext-color:;
+  --greentext-color: #dddddd;
+  --header-color: #444444;
+  --darken-color: #222222;
+  --midnight-color: #2c2c2c;
+  --lighten1-color: #444444;
+  --lighten2-color: #dddddd;
+  --btn-color:;
+  --description-color: #00688a;
+  --label-color: #00688a;
+  --textholder-color: #00688a;
+  --dropshadow-top: #1a1a1a;
+  --dropshadow-bottom: #000000;
+  --dropshadow2-top: #2a2a2a;
+  --dropshadow2-bottom: #000000;
+  --innershadow-top: #1e1e1e;
+  --innershadow-bottom: #000000;
+  --footer-color: #121212;
+  --dropshadow3-top: #242424;
+  --dropshadow3-bottom: #000000;
+  --filters-color: #003e52;
+  --contact-color: #197694;
+  --animatedcircle-color: #ffffff;
+  --static-circle-color: #b7b7b7;
+  --animatedtext-color: #888888;
+  --animatedtext-active-color: #ffffff;
+  --indicatortop-shadow-color: #2e6070;
+  --indicatorbottom-shadow-color: #0a4050;
+  --focused-border-color: #666666;
+  --region-text-color: #dddddd;
+  --indicator-gradient-solid: #e0e0e0; /* 100% */
+  --indicator-gradient-transparent: #e0e0e0; /* 0% */
+  --indicator-line-color: #666666;
+  --steps-shadow-color: #222222;
+}
