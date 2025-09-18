@@ -82,15 +82,17 @@ const showMaps = computed(
     <div class="citizens__container">
       <div v-if="showAccordion" class="citizens__accordion">
         <h1>{{ $t('citizens.item-2') }}</h1>
-        <Accordion
-          v-for="(item, index) in filteredServices"
-          :key="index"
-          :title="`${item.title}`"
-          :isOpen="openIndex === index"
-          @toggle="() => (openIndex = openIndex === index ? null : index)"
-        >
-          <p>{{ item.content }}</p>
-        </Accordion>
+        <div class="citizens__accordion-items">
+          <Accordion
+            v-for="(item, index) in filteredServices"
+            :key="index"
+            :title="`${item.title}`"
+            :isOpen="openIndex === index"
+            @toggle="() => (openIndex = openIndex === index ? null : index)"
+          >
+            <p>{{ item.content }}</p>
+          </Accordion>
+        </div>
       </div>
       <div class="citizens__card">
         <div v-if="showServices" class="citizens__cards">
@@ -108,6 +110,11 @@ const showMaps = computed(
 <style scoped>
 .citizens {
   margin-top: 2.75rem;
+}
+.citizens__accordion-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 .citizens__container {
   display: flex;

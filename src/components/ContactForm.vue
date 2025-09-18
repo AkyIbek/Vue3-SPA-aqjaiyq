@@ -43,7 +43,9 @@ input {
   z-index: 33;
   border-radius: 0.5rem;
   border: none;
-  box-shadow: inset 0px 0px 4px 0px #00131a;
+  box-shadow:
+    inset 0px 1px 4px 0px #00131a,
+    inset 0px -2px 2px 0px #005570;
 }
 textarea {
   position: relative;

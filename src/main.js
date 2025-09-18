@@ -60,3 +60,4 @@ app.use(router)
 app.use(PrimeVue)
 app.use(i18n)
 app.mount('#app')
+  

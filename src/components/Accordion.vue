@@ -2,7 +2,20 @@
   <div class="accordion">
     <div class="accordion-header" @click="toggle">
       <h3 class="accordion__title">{{ title }}</h3>
-      <span class="arrow" :class="{ open: isOpen }">▼</span>
+      <span class="arrow" :class="{ open: isOpen }"
+        ><svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16.59 8.29501L12 12.875L7.41 8.29501L6 9.70501L12 15.705L18 9.70501L16.59 8.29501Z"
+            fill="#197694"
+          />
+        </svg>
+      </span>
     </div>
 
     <div
@@ -50,7 +63,6 @@ watch(
 .accordion {
   position: relative;
   border-radius: 8px;
-  margin-bottom: 1rem;
   background-color: var(--bg-color, #2e6070);
   color: white;
 }
@@ -79,7 +91,9 @@ watch(
 .accordion-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 3.5rem;
+  padding: 1rem 1.25rem;
   cursor: pointer;
 }
 
@@ -100,12 +114,10 @@ watch(
   padding-top: 0.5rem;
 }
 .accordion__title {
-  margin: 1rem 0rem;
   display: flex;
-  width: 51 0px;
+  max-width: 508px;
   font-size: 1em;
   font-weight: 500;
-  padding-left: 1.5rem;
 }
 .accordion__text {
   position: relative;

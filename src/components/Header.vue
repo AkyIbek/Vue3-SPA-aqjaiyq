@@ -163,22 +163,21 @@ function updateThemeIndicator() {
 <style scoped>
 .languages__indicator {
   position: relative;
+  right: 4.5%;
   width: 2.5rem;
   height: 1.5rem;
   border-radius: 6px;
-  top: 0px;
   transition: transform 0.3s ease;
   pointer-events: none;
   z-index: 0;
 }
 
 .theme-indicator {
-  position: absolute;
+  position: relative;
   width: 2.5rem;
+  right: 8%;
   height: 1.5rem;
   border-radius: 6px;
-  right: 339px;
-  top: 0;
   transition: transform 0.3s ease;
   pointer-events: none;
   z-index: 0;
@@ -227,6 +226,7 @@ function updateThemeIndicator() {
 .header__themes {
   display: flex;
   align-items: center;
+  position: relative;
   gap: 1.5rem;
 }
 
@@ -238,17 +238,6 @@ function updateThemeIndicator() {
   padding: 4px;
 }
 
-.theme-indicator {
-  position: relative;
-  width: 2.5rem;
-  height: 1.5rem;
-  border-radius: 6px;
-  top: 0;
-  transition: transform 0.3s ease;
-  pointer-events: none;
-  z-index: 0;
-  border-radius: 6px;
-}
 .theme-indicator::before {
   content: '';
   position: absolute;
@@ -361,6 +350,7 @@ function updateThemeIndicator() {
 .header__languages {
   display: flex;
   gap: 1.25rem;
+  position: relative;
   align-items: center;
 }
 .header__languages::after {
@@ -394,7 +384,6 @@ function updateThemeIndicator() {
 }
 .languages__indicator {
   position: relative;
-  right: 145px;
   width: 2.5rem;
   height: 1.5rem;
   border-radius: 6px;

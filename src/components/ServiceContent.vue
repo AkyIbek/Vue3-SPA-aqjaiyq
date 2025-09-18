@@ -53,6 +53,9 @@ const regionItems = computed(() => [
 const typeOptions = computed(() => typeItems.value.map((i) => i.label))
 const regionOptions = computed(() => regionItems.value.map((i) => i.label))
 
+
+
+
 // --- выбранные: метка (для селекта) + ключ (для фильтрации)
 const selectedTypeLabel = ref(typeOptions.value[0])
 const selectedTypeKey = ref(typeItems.value[0].key)
