@@ -1,0 +1,143 @@
+:root {
+  --animatedcircle-color: #ffffff;
+  --animatedtext-active-color: #ffffff;
+  --animatedtext-color: #5c8693;
+  --bg-color: #00455c; /* основная синяя */
+  --btn-color: ;
+  --contact-color: #197694;
+  --contact-left-shadow-color: #00455c;
+  --contact-right-shadow-color: #005570;
+  --darken-color: #003e52;
+  --description-color: #00688a;
+  --descripotion-color: #bbd4dd;
+  --dropshadow-bottom: #001f29;
+  --dropshadow-top: #006180;
+  --dropshadow2-bottom: #001f29;
+  --dropshadow2-top: #006c8f;
+  --dropshadow3-bottom: #002e3d;
+  --dropshadow3-top: #005570;
+  --filters-color: #003e52;
+  --focused-border-color: #003e52;
+  --footer-color: #003647;
+  --footer-logo-color: #5c8693;
+  --footer-text-color: #558ea0;
+  --greentext-color: #d0dce0;
+  --header-color: #00455c;
+  --hover-shadow:;
+  --indicator-color: ;
+  --indicator-gradient-solid: rgba(46, 96, 112, 1); /* 100% */
+  --indicator-gradient-transparent: rgba(46, 96, 112, 0); /* 0% */
+  --indicator-line-color: #00688a;
+  --innershadow-bottom: #00131a;
+  --innershadow-top: #005570;
+  --label-color: #558ea0;
+  --labelname-color: #7daebf;
+  --lighten1-color: #004d66;
+  --lighten2-color: #00688a;
+  --midnight-color: #00455c;
+  --navlist-color: white;
+  --region-text-color: #d0dce0;
+  --static-circle-color: #a8bec6;
+  --steps-shadow-color: #003e52;
+  --subtext-color: #7daebf;
+  --textholder-color: #00688a;
+  --text-color: #ffffff;
+  --arrow-color: #00688a;
+  --more-details-color: #7daebf;
+}
+
+:root[data-theme='light'] {
+  --animatedcircle-color: #1a936f;
+  --animatedtext-active-color: #1a936f;
+  --animatedtext-color: #888888;
+  --bg-color: #ffffff; /* основная синяя */
+  --btn-color: ;
+  --contact-color: black;
+  --contact-left-shadow-color: ;
+  --contact-right-shadow-color: ;
+  --darken-color: #f3f3f3;
+  --description-color: #00688a;
+  --descripotion-color: black;
+  --dropshadow-bottom: #dcdcdc;
+  --dropshadow-top: #ffffff;
+  --dropshadow2-bottom: #cccccc;
+  --dropshadow2-top: #f0f0f0;
+  --dropshadow3-bottom: #bbbbbb;
+  --dropshadow3-top: #eeeeee;
+  --filters-color: #f3f3f3;
+  --focused-border-color: #aeaeb2;
+  --footer-color: #eaeaea;
+  --footer-logo-color: #888888;
+  --footer-text-color: #888888;
+  --greentext-color: green;
+  --header-color: #1a936f;
+  --hover-shadow:;
+  --indicator-color: #1a936f;
+  --indicator-gradient-solid: #e0e0e0; /* 100% */
+  --indicator-gradient-transparent: #e0e0e0; /* 0% */
+  --indicator-line-color: #d5ebe4;
+  --innershadow-bottom: #c0c0c0;
+  --innershadow-top: #f2f2f2;
+  --label-color: #00688a;
+  --labelname-color: #7daebf;
+  --lighten1-color: #f3f3f3;
+  --lighten2-color: #00688a;
+  --midnight-color: #ffffff;
+  --navlist-color: white;
+  --region-text-color: #888888;
+  --static-circle-color: #e0e0e0;
+  --steps-shadow-color: #f3f3f3;
+  --subtext-color: ;
+  --textholder-color: #00688a;
+  --text-color: black;
+  --arrow-color: #1a936f;
+  --more-details-color: #1a936f;
+}
+
+:root[data-theme='dark'] {
+  --animatedcircle-color: #ffffff;
+  --animatedtext-active-color: #ffffff;
+  --animatedtext-color: #888888;
+  --bg-color: #2c2c2c; /* основная синяя */
+  --btn-color: ;
+  --contact-color: #ffffff;
+  --contact-left-shadow-color: ;
+  --contact-right-shadow-color: ;
+  --darken-color: #222222;
+  --description-color: #00688a;
+  --descripotion-color: #dddddd;
+  --dropshadow-bottom: #000000;
+  --dropshadow-top: #1a1a1a;
+  --dropshadow2-bottom: #000000;
+  --dropshadow2-top: #2a2a2a;
+  --dropshadow3-bottom: #000000;
+  --dropshadow3-top: #242424;
+  --filters-color: ;
+  --focused-border-color: #666666;
+  --footer-color: #121212;
+  --footer-logo-color: #666666;
+  --footer-text-color: #666666;
+  --greentext-color: #dddddd;
+  --header-color: #444444;
+  --hover-shadow:;
+  --indicator-color: #444444;
+  --indicator-gradient-solid: #e0e0e0; /* 100% */
+  --indicator-gradient-transparent: #e0e0e0; /* 0% */
+  --indicator-line-color: #666666;
+  --innershadow-bottom: #000000;
+  --innershadow-top: #1e1e1e;
+  --label-color: #00688a;
+  --labelname-color: #7daebf;
+  --lighten1-color: #444444;
+  --lighten2-color: #dddddd;
+  --midnight-color: #2c2c2c;
+  --navlist-color: white;
+  --region-text-color: #dddddd;
+  --static-circle-color: #b7b7b7;
+  --steps-shadow-color: #222222;
+  --subtext-color: ;
+  --textholder-color: #00688a;
+  --text-color: #ffffff;
+  --arrow-color: #ffffff;
+  --more-details-color: white;
+}
